@@ -21,6 +21,20 @@
     </thead>
 
     <tbody>
-
+        @foreach(var obj in Model.clientList)
+        {
+            <tr>
+                <td>@obj.id</td>
+                <td>@obj.name</td>
+                <td>@obj.email</td>
+                <td>@obj.phone</td>
+                <td>@obj.address</td>
+                <td>@obj.created_at</td>
+                <td>
+                    <a class = "btn btn-primary btn-sm" href="/Clients/Edit?id=">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Clients/Delete?id=">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
