@@ -31,8 +31,8 @@
                 <td>@obj.address</td>
                 <td>@obj.created_at</td>
                 <td>
-                    <a class = "btn btn-primary btn-sm" href="/Clients/Edit?id=">Edit</a>
-                    <a class="btn btn-danger btn-sm" href="/Clients/Delete?id=">Delete</a>
+                    <a class = "btn btn-primary btn-sm" href="/Clients/Edit?id=@obj.id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Clients/Delete?id=@obj.id">Delete</a>
                 </td>
             </tr>
         }
